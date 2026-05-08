@@ -619,43 +619,43 @@
       "category": "美股",
       "content": "标普 500 跌 0.38% 至 7,337.11，道指跌 313 点，受亚马逊及半导体股拖累；TSLA 涨 3.33%、NVDA 涨 1.85%、MSFT 涨 1.70% 逆势走强。",
       "source": "CNBC",
-      "url": ""
+      "url": "https://www.cnbc.com/2026/05/06/stock-market-today-live-updates.html"
     },
     {
       "category": "美债",
       "content": "10Y 美债收益率降至 4.391%，油价大跌后通胀压力减弱，美联储加息预期回落；美国财政部维持短期借贷策略，Q2 预计借款 1,890 亿美元。",
       "source": "TradingEconomics",
-      "url": ""
+      "url": "https://tradingeconomics.com/united-states/government-bond-yield"
     },
     {
       "category": "原油",
       "content": "Brent 原油回升至 $101.19，WTI 至 $95.67，美伊就「停战一页备忘录」通过巴基斯坦渠道持续谈判，约 2.3 万名海员仍被困波斯湾。",
       "source": "TradingEconomics",
-      "url": ""
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
     },
     {
       "category": "黄金白银",
       "content": "黄金涨 0.37% 至 $4,728，白银涨 0.22% 至 $80.36，中国央行连续第 18 个月增持黄金储备，TD 证券预测美伊和谈成功后金价有望突破 $5,200。",
       "source": "CNBC",
-      "url": ""
+      "url": "https://www.cnbc.com/2026/05/07/gold-silver-rally-resume-once-war-lifts-markets.html"
     },
     {
       "category": "加密市场",
       "content": "BTC 维持约 $81,000 附近，ETH 约 $2,329；BNY Mellon 在阿布扎比推出 BTC 和 ETH 机构托管服务，Bitmine 宣布接近 ETH 5% 积累目标后将转向质押和股票回购。",
       "source": "Yahoo Finance",
-      "url": ""
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-may-7-2026-bitcoin-holds-near-81000-this-morning-113637750.html"
     },
     {
       "category": "加密ETF",
       "content": "BTC ETF 5 月 7 日净流出 $179.48M，ETH ETF 净流出 $77.21M；但近两月 BTC ETF 累计净流入达 $33 亿，五连周净流入或创 2025 年 7 月以来最长纪录。",
       "source": "The Block",
-      "url": ""
+      "url": "https://www.theblock.co/post/400349/spot-bitcoin-etfs-five-day-inflow-streak"
     },
     {
       "category": "加密股票",
       "content": "Strategy (MSTR) Q1 亏损 $125.4 亿，Saylor 表示未来或出售部分 BTC 以支付 STRC 优先股股息；Circle (CRCL) 大跌 7.02%，Coinbase 跌 2.53%，Robinhood 跌 3.50%。",
       "source": "CoinDesk",
-      "url": ""
+      "url": "https://www.coindesk.com/markets/2026/05/04/the-bitcoin-etf-recovery-in-flows-is-real-it-is-just-not-complete-yet"
     }
   ]
 }
