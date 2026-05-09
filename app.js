@@ -252,7 +252,15 @@ function initExport() {
       const format = opt.dataset.format;
       if (format === 'pdf') exportPDF();
       else if (format === 'copy') {
-        navigator.clipboard.writeText(exportSlackText()).then(() => showToast());
+        navigator.clipboard.writeText(exportSlackText()).then(() => showToast()).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = exportSlackText();
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast();
+        });
       }
       panel.classList.remove('open');
     });
@@ -280,10 +288,11 @@ function exportSlackText() {
 
   function fmtS(ticker) {
     const s = stockMap[ticker];
-    if (!s) return '';
+    if (!s || s.price == null) return '';
     const name = DISPLAY_NAMES[ticker] || s.name;
-    const sign = s.change_pct > 0 ? '+' : '';
-    return `${name}：${fmtPrice(s.price, 2)} (${sign}${s.change_pct.toFixed(2)}%)`;
+    const pct = s.change_pct != null ? s.change_pct : 0;
+    const sign = pct > 0 ? '+' : '';
+    return `${name}：${fmtPrice(s.price, 2)} (${sign}${pct.toFixed(2)}%)`;
   }
 
   function joinItems(tickers) {
@@ -316,10 +325,11 @@ function exportSlackText() {
 
   const BOND_NAMES = { 'U.S. 30Y': '30Y', 'U.S. 10Y': '10Y', 'U.S. 5Y': '5Y', 'U.S. 2Y': '2Y' };
   out += `**美债收益率**\n\n`;
-  const bondItems = (d.bonds || []).map(b => {
+  const bondItems = (d.bonds || []).filter(b => b.price != null).map(b => {
     const label = BOND_NAMES[b.name] || b.name;
-    const sign = b.change_abs > 0 ? '+' : '';
-    return `${label}：${b.price.toFixed(3)}% (${sign}${b.change_abs.toFixed(3)})`;
+    const chg = b.change_abs != null ? b.change_abs : 0;
+    const sign = chg > 0 ? '+' : '';
+    return `${label}：${b.price.toFixed(3)}% (${sign}${chg.toFixed(3)})`;
   });
   out += bondItems.join(' ｜ ') + '\n\n';
 
@@ -329,11 +339,12 @@ function exportSlackText() {
     'Heating Oil': '取暖油'
   };
   out += `**大宗商品**\n\n`;
-  const commItems = (d.commodities || []).map(c => {
+  const commItems = (d.commodities || []).filter(c => c.price != null).map(c => {
     const label = COMMODITY_NAMES[c.name] || c.name;
     const dec = c.price >= 100 ? 2 : c.price >= 10 ? 3 : 4;
-    const sign = c.change_pct > 0 ? '+' : '';
-    return `${label}：${fmtPrice(c.price, dec)} (${sign}${c.change_pct.toFixed(2)}%)`;
+    const pct = c.change_pct != null ? c.change_pct : 0;
+    const sign = pct > 0 ? '+' : '';
+    return `${label}：${fmtPrice(c.price, dec)} (${sign}${pct.toFixed(2)}%)`;
   });
   out += commItems.join(' ｜ ') + '\n\n';
 
