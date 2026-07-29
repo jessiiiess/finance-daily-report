@@ -4,7 +4,8 @@ const STOCK_GROUPS = {
   '指数': { label: '指数', tickers: ['^GSPC', '^IXIC', '^DJI', '^N225', '^HSI', 'SCHD'] },
   '科技': { label: '科技', tickers: ['AAPL', 'TSLA', 'NVDA', 'MSFT', 'GOOGL', 'AMZN'] },
   '金融': { label: '金融', tickers: ['JPM', 'V', 'GS', 'BLK', 'PYPL', 'XYZ'] },
-  '加密': { label: '加密', tickers: ['COIN', 'HOOD', 'MSTR', 'CRCL', 'BMNR', 'TRON'] }
+  '加密': { label: '加密', tickers: ['COIN', 'HOOD', 'MSTR', 'CRCL', 'BMNR', 'TRON'] },
+  '存储': { label: '存储', tickers: ['WDC', 'STX', 'PSTG', 'NTAP', 'MU'] }
 };
 
 const DISPLAY_NAMES = {
@@ -16,7 +17,9 @@ const DISPLAY_NAMES = {
   'JPM': 'JPMorgan Chase (JPM)', 'V': 'Visa (V)', 'GS': 'Goldman Sachs (GS)',
   'BLK': 'BlackRock (BLK)', 'PYPL': 'PayPal (PYPL)', 'XYZ': 'Block (XYZ)',
   'COIN': 'Coinbase (COIN)', 'HOOD': 'Robinhood (HOOD)', 'MSTR': 'MicroStrategy (MSTR)',
-  'CRCL': 'Circle (CRCL)', 'BMNR': 'Bitmine (BMNR)', 'TRON': 'TRON (TRON)'
+  'CRCL': 'Circle (CRCL)', 'BMNR': 'Bitmine (BMNR)', 'TRON': 'TRON (TRON)',
+  'WDC': 'Western Digital (WDC)', 'STX': 'Seagate (STX)', 'PSTG': 'Pure Storage (PSTG)',
+  'NTAP': 'NetApp (NTAP)', 'MU': 'Micron (MU)'
 };
 
 function getToday() {
