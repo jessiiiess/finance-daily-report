@@ -392,21 +392,6 @@
       "eps": null
     },
     {
-      "ticker": "PSTG",
-      "name": "Pure Storage",
-      "type": "存储",
-      "price": null,
-      "change_pct": null,
-      "volume": null,
-      "market_cap": null,
-      "prev_close": null,
-      "open": null,
-      "high": null,
-      "low": null,
-      "pe_ratio": null,
-      "eps": null
-    },
-    {
       "ticker": "NTAP",
       "name": "NetApp",
       "type": "存储",
@@ -425,14 +410,14 @@
       "ticker": "MU",
       "name": "Micron Technology",
       "type": "存储",
-      "price": null,
-      "change_pct": null,
-      "volume": null,
+      "price": 820.53,
+      "change_pct": -8.85,
+      "volume": 58476265,
       "market_cap": null,
-      "prev_close": null,
-      "open": null,
-      "high": null,
-      "low": null,
+      "prev_close": 900.2,
+      "open": 840.47,
+      "high": 848.36,
+      "low": 789.09,
       "pe_ratio": null,
       "eps": null
     }
