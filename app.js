@@ -115,7 +115,7 @@ function renderStocks(container, stocks) {
   }
 
   let html = '';
-  const groups = ['指数', '科技', '金融', '加密'];
+  const groups = ['指数', '科技', '金融', '加密', '存储'];
 
   for (const groupKey of groups) {
     const group = STOCK_GROUPS[groupKey];
@@ -310,6 +310,7 @@ function exportSlackText() {
   out += `「科技」\n ${joinItems(STOCK_GROUPS['科技'].tickers)}\n\n`;
   out += `「金融」\n ${joinItems(STOCK_GROUPS['金融'].tickers)}\n\n`;
   out += `「加密」\n ${joinItems(STOCK_GROUPS['加密'].tickers)}\n\n`;
+  out += `「存储」\n ${joinItems(STOCK_GROUPS['存储'].tickers)}\n\n`;
 
   out += `**BTC / ETH / SOL 现货 ETF**\n\n`;
   for (const etf of d.crypto_etf || []) {
