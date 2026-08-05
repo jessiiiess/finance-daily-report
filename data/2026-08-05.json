@@ -425,8 +425,8 @@
       "ticker": "MU",
       "name": "Micron Technology",
       "type": "存储",
-      "price": null,
-      "change_pct": null,
+      "price": 892.67,
+      "change_pct": 7.62,
       "volume": null,
       "market_cap": null,
       "prev_close": null,
@@ -434,7 +434,8 @@
       "high": null,
       "low": null,
       "pe_ratio": null,
-      "eps": null
+      "eps": null,
+      "note": "source: Twelve Data"
     }
   ],
   "forex": [
@@ -494,14 +495,15 @@
       "ticker": "SGDCNY=X",
       "name": "SGD/CNY",
       "type": "外汇",
-      "price": null,
+      "price": 5.2683,
       "change_pct": null,
       "change_abs": null,
       "volume": null,
       "prev_close": null,
       "open": null,
       "high": null,
-      "low": null
+      "low": null,
+      "note": "source: Twelve Data"
     }
   ],
   "bonds": [
