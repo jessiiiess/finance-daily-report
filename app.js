@@ -46,7 +46,7 @@ async function loadData(date) {
   updateTime.textContent = '';
 
   try {
-    const res = await fetch(`data/${date}.json`);
+    const res = await fetch(`data/${date}.json`, { cache: 'no-store' });
     if (!res.ok) throw new Error('not found');
     const data = await res.json();
     currentData = { ...data, date };
