@@ -12,9 +12,11 @@
 美债使用Investing.com的u.s.-{30/10/5/2}-year-bond-yield页面。按data-test=\"instrument-price-last\"、\"instrument-price-change\"、\"instrument-price-change-percent\"元素内部文字读取，不能在附近HTML全文正则取第一个数字（CSS含-0.5会误读）。核验收益率合理范围、差值与前收盘价一致。变化单位百分点；1个百分点=100bp。不得将2YY=F收益率期货充当2年现金国债收益率。
 
 ## ETF
-优先SoSoValue BTC/ETH/SOL现货ETF，字段net_inflow、volume、total_assets、market_cap_pct、date。遇安全验证阻断即停止该站，不绕过。当前浏览器2026-10-29被Cloudflare硬阻断。
-资金流备用https://farside.co.uk/btc/、eth/、sol/；表格单位US$m，括号为负数，横线表示未报不能当0；检查当日完整度。2026-10-28已核实BTC+137.3M、ETH-21.4M、SOL-5.7M（Farside一位小数）。原报BTC+1.32M和ETH+23.41M被修正。
-SoSoValue无法复核的成交额、总资产，本次沿用同一天原报但显示“原报值，未复核”；后续不得给旧值改截至日期冒充新值，不能获取时使用“—”并说明。市值占比抓取缺失必须显示“—”，不得用0.00%占位。来源不同请逐字段注明。
+BTC/ETH/SOL美国现货ETF的成交额和总资产首选DefiLlama https://defillama.com/etfs ，不再将SoSoValue作为日常抓取来源。
+读取完整基金列表，以Coin分类，按Ticker去重；排除期货、杠杆、反向及非美国基金。逐只保留ticker、币种、成交额（美元）、AUM、数据日期和来源；按币种汇总Volume填volume、AUM填total_assets。完整列表和日期未核实前不能把当前可见行的部分合计写成全市场总额；若范围与原报不同，注明覆盖基金及口径变化。美元成交额不得与份额成交量、币本体成交量混淆，不得用收盘价乘成交股数冒充精确成交额。
+净流入继续以Farside https://farside.co.uk/btc/、https://farside.co.uk/eth/、https://farside.co.uk/sol/ 为准；DefiLlama资金流可交叉核验。Farside单位US$m、括号为负，横线或未报不得当零。DefiLlama卡片和表格冲突时不盲用卡片，查明差异或披露。
+保留net_inflow、volume、total_assets、market_cap_pct、date字段兼容；逐字段记录来源与截至日期，资金流和成交额日期必须区分，不能改旧值日期冒充新值。市值占比仅在有同日、同口径币种市值及ETF资产时计算并注明分子分母来源，否则显示“—”。数据缺失显示“—”并说明，禁止0.00%占位。以后重新抓取的验证通过字段移除“原报值，未复核”标注。
+2026-10-29最初试跑使用Farside修正2026-10-28流量：BTC+137.3M、ETH-21.4M、SOL-5.7M；原SoSoValue访问被Cloudflare阻断。本节为随后用户指定DefiLlama后的最新来源规则。
 
 ## 新闻
 7条顺序：美股、美债、原油、黄金白银、加密市场、加密ETF、加密股票。今天或昨天，新闻正文<=60字，1至2个数字仅在可核实时加入，保留category/content/source/url/date。直接原文链接去UTM，不使用Google RSS跳转。核查发布与更新时间、原文和JSON数字一致。原报“加密股票”错写成存储股，已纠正。用搜索找新闻后可用普通HTTP GET验证全文及链接；本次7条原文均HTTP200。
