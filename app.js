@@ -23,7 +23,7 @@ const DISPLAY_NAMES = {
 };
 
 function getToday() {
-  return new Date().toISOString().split('T')[0];
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 }
 
 function init() {
@@ -89,6 +89,9 @@ function escapeHtml(str) {
 }
 
 function renderAll(container, data) {
+  if (data.data_notes && data.data_notes.length) {
+    container.appendChild(createCard('数据说明', data.data_notes.map(note => `<div>${escapeHtml(note)}</div>`).join('')));
+  }
   renderStocks(container, data.stocks);
   renderETF(container, data.crypto_etf);
   renderForex(container, data.forex);
@@ -303,7 +306,9 @@ function exportSlackText() {
   }
 
   let out = `传统金融市场日报 — ${d.date}\n`;
-  out += `详细数据见 Google Sheets（数据来源：Yahoo Finance / FRED / SoSoValue）\n\n`;
+  out += `数据来源：Yahoo Finance / Investing.com / SoSoValue；ETF资金流备用 Farside\n\n`;
+
+  if (d.data_notes && d.data_notes.length) out += d.data_notes.join('\n') + '\n\n';
 
   out += `**全球主要指数与重点美股**\n\n`;
   out += `「指数」\n ${joinItems(STOCK_GROUPS['指数'].tickers)}\n\n`;
