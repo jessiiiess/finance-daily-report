@@ -197,7 +197,7 @@
       "as_of": "2026-10-30T20:00:01+00:00",
       "market_state": "latest available regular market quote",
       "open": null,
-      "high": 526.0,
+      "high": 526,
       "low": 514.35,
       "volume": 35652049
     },
@@ -297,7 +297,7 @@
       "as_of": "2026-10-30T20:00:03+00:00",
       "market_state": "latest available regular market quote",
       "open": null,
-      "high": 906.0,
+      "high": 906,
       "low": 879.5,
       "volume": 2137381
     },
@@ -398,7 +398,7 @@
       "market_state": "latest available regular market quote",
       "open": null,
       "high": 85.21,
-      "low": 82.0,
+      "low": 82,
       "volume": 27779932
     },
     {
@@ -785,8 +785,8 @@
       "as_of": "2026-11-02T01:53:32+00:00",
       "market_state": "latest available regular market quote",
       "open": null,
-      "high": 3924.0,
-      "low": 3889.0,
+      "high": 3924,
+      "low": 3889,
       "volume": 17553
     },
     {
@@ -920,29 +920,29 @@
     {
       "category": "美股",
       "content": "AI投资回报担忧延续，亚洲股市走弱；本周关注苹果、AMD和Palantir业绩。",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-02/",
+      "source": "Reuters / Investing.com",
+      "url": "https://au.investing.com/news/stock-market-news/asia-shares-bend-under-ai-stress-apple-earnings-loom-4732112",
       "date": "2026-11-02"
     },
     {
       "category": "美债",
       "content": "市场仍押注12月加息，利率路径成为本周制造业与就业数据公布前的焦点。",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-02/",
+      "source": "Reuters / Investing.com",
+      "url": "https://au.investing.com/news/stock-market-news/asia-shares-bend-under-ai-stress-apple-earnings-loom-4732112",
       "date": "2026-11-02"
     },
     {
       "category": "原油",
       "content": "伊朗相关和平谈判压低油价，但Brent仍在每桶111美元上方，供应风险尚存。",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-02/",
+      "source": "Reuters / Investing.com",
+      "url": "https://au.investing.com/news/stock-market-news/asia-shares-bend-under-ai-stress-apple-earnings-loom-4732112",
       "date": "2026-11-02"
     },
     {
       "category": "黄金白银",
       "content": "亚洲时段黄金小幅反弹，市场关注此前保证金压力引发的抛售及利率预期。",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-02/",
+      "source": "Reuters / Investing.com",
+      "url": "https://au.investing.com/news/stock-market-news/asia-shares-bend-under-ai-stress-apple-earnings-loom-4732112",
       "date": "2026-11-02"
     },
     {
