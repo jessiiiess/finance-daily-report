@@ -12,18 +12,20 @@
 美债使用Investing.com的u.s.-{30/10/5/2}-year-bond-yield页面。按data-test=\"instrument-price-last\"、\"instrument-price-change\"、\"instrument-price-change-percent\"元素内部文字读取，不能在附近HTML全文正则取第一个数字（CSS含-0.5会误读）。核验收益率合理范围、差值与前收盘价一致。变化单位百分点；1个百分点=100bp。不得将2YY=F收益率期货充当2年现金国债收益率。
 
 ## ETF
-BTC/ETH/SOL美国现货ETF的成交额和总资产首选DefiLlama https://defillama.com/etfs ，不再将SoSoValue作为日常抓取来源。
+BTC/ETH/SOL美国现货ETF首选DefiLlama https://defillama.com/etfs 与Farside；覆盖不全、日期不明或无法访问时必须主动查找其他可靠来源（包括基金官网、其他数据平台），不限网站。逐项核实后补齐，不因单一来源失败直接留空。
 读取完整基金列表，以Coin分类，按Ticker去重；排除期货、杠杆、反向及非美国基金。逐只保留ticker、币种、成交额（美元）、AUM、数据日期和来源；按币种汇总Volume填volume、AUM填total_assets。完整列表和日期未核实前不能把当前可见行的部分合计写成全市场总额；若范围与原报不同，注明覆盖基金及口径变化。美元成交额不得与份额成交量、币本体成交量混淆，不得用收盘价乘成交股数冒充精确成交额。
 净流入继续以Farside https://farside.co.uk/btc/、https://farside.co.uk/eth/、https://farside.co.uk/sol/ 为准；DefiLlama资金流可交叉核验。Farside单位US$m、括号为负，横线或未报不得当零。DefiLlama卡片和表格冲突时不盲用卡片，查明差异或披露。
-保留net_inflow、volume、total_assets、market_cap_pct、date字段兼容；逐字段记录来源与截至日期，资金流和成交额日期必须区分，不能改旧值日期冒充新值。市值占比仅在有同日、同口径币种市值及ETF资产时计算并注明分子分母来源，否则显示“—”。数据缺失显示“—”并说明，禁止0.00%占位。以后重新抓取的验证通过字段移除“原报值，未复核”标注。
+保留net_inflow、volume、total_assets、market_cap_pct、date字段兼容；逐字段记录来源与截至日期，资金流和成交额日期必须区分，不能改旧值日期冒充新值。市值占比仅在有同日、同口径币种市值及ETF资产时计算并注明分子分母来源，否则显示“—”。数据缺失显示“—”，原因仅在对话中说明，禁止0.00%占位。以后重新抓取的验证通过字段移除“原报值，未复核”标注。
 2026-10-29最初试跑使用Farside修正2026-10-28流量：BTC+137.3M、ETH-21.4M、SOL-5.7M；原SoSoValue访问被Cloudflare阻断。本节为随后用户指定DefiLlama后的最新来源规则。
 
+可用备用来源：Trading Digits https://www.tradingdigits.io/crypto-etf-tracker（各币种overview）。完整行情列表包含coin、ticker、daily_volume_usd、price_date、last_updated。仅读取当天明确price_date的美元成交额，核对BTC 12、ETH 11、SOL 9只当前名单；排除旧ticker CETH与不在现货范围的基金。net_assets没有独立估值日期时不能把price_date自动作为AUM日期。Coinmico各币种页可查带明确日期的AUM与市值占比；不得混用首页最新日期与旧资产卡片。
+
 ## 新闻
-7条顺序：美股、美债、原油、黄金白银、加密市场、加密ETF、加密股票。今天或昨天，新闻正文<=60字，1至2个数字仅在可核实时加入，保留category/content/source/url/date。直接原文链接去UTM，不使用Google RSS跳转。核查发布与更新时间、原文和JSON数字一致。原报“加密股票”错写成存储股，已纠正。用搜索找新闻后可用普通HTTP GET验证全文及链接；本次7条原文均HTTP200。
+7条必须来自7个不同网站（按注册域名去重）；优先不同独立媒体或一手发布方，不用同一通讯社的多站转载凑数；不是抓取状态说明。7条顺序：美股、美债、原油、黄金白银、加密市场、加密ETF、加密股票。今天或昨天，新闻正文<=60字，1至2个数字仅在可核实时加入，保留category/content/source/url/date。直接原文链接去UTM，不使用Google RSS跳转。核查发布与更新时间、原文和JSON数字一致。原报“加密股票”错写成存储股，已纠正。用搜索找新闻后可用普通HTTP GET验证全文及链接；本次7条原文均HTTP200。
 
 ## 发布
-JSON必须完整可解析、数字有限、无必填行情缺失、7条新闻及对应分类正确。保留data_notes在页面显示缺失与真实截至日期。仅发布验证完成的字段；不把部分抓取成功说成全部完成。
+JSON必须完整可解析、数字有限、无必填行情缺失、7条新闻及对应分类正确。不在网页、PDF或复制导出中展示“数据说明”、抓取问题、缺失解释或排障文字；不要生成data_notes或ETF note说明。来源、实际日期可保留为结构化元数据，字段日期不同则紧邻对应数据简洁标日期。所有限制、缺失原因和排障只在对话中告知用户。仅发布验证完成的字段；不把部分抓取成功说成全部完成。
 通过GitHub create_tree/create_commit/update_ref(expected_sha，不force)原子发布多文件；或单文件update_file带最新blob SHA。检查Actions的pages build and deployment，直到终态；HTTP GET线上当天JSON比较内容。失败如实报告。
 
 ## 2026-10-29试跑
-28条股票/指数ETF、5组外汇、4组现券美债、8种商品均抓取成功；ETF流量使用Farside，其他ETF指标本次未全部核实。网站日期修正为北京时间，显示data_notes并移除导出文字中的Google Sheets。
+28条股票/指数ETF、5组外汇、4组现券美债、8种商品均抓取成功；ETF流量使用Farside，其他ETF指标本次未全部核实。网站日期修正为北京时间，曾显示data_notes（现依用户要求移除）并移除导出文字中的Google Sheets。

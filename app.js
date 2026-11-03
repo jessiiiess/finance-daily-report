@@ -89,9 +89,6 @@ function escapeHtml(str) {
 }
 
 function renderAll(container, data) {
-  if (data.data_notes && data.data_notes.length) {
-    container.appendChild(createCard('数据说明', data.data_notes.map(note => `<div>${escapeHtml(note)}</div>`).join('')));
-  }
   renderStocks(container, data.stocks);
   renderETF(container, data.crypto_etf);
   renderForex(container, data.forex);
@@ -143,15 +140,24 @@ function renderStocks(container, stocks) {
   container.appendChild(createCard('全球主要指数与重点美股', html));
 }
 
+function etfDateLabel(etf) {
+  const shortDate = value => {
+    const parts = (value || '').split('-');
+    return parts.length === 3 ? `${Number(parts[1])} 月 ${Number(parts[2])} 日` : '';
+  };
+  const mainDate = shortDate(etf.date);
+  const assetDate = etf.field_dates && etf.field_dates.total_assets;
+  return assetDate && assetDate !== etf.date
+    ? `${mainDate}；资产及占比 ${shortDate(assetDate)}`
+    : mainDate;
+}
+
 function renderETF(container, etfData) {
   if (!etfData || etfData.length === 0) return;
 
   let html = '';
   for (const etf of etfData) {
-    const dateParts = etf.date ? etf.date.split('-') : [];
-    const dateStr = dateParts.length === 3
-      ? `${parseInt(dateParts[1])} 月 ${parseInt(dateParts[2])} 日`
-      : '';
+    const dateStr = etfDateLabel(etf);
 
     html += `<div class="etf-row">
       <span class="label">${escapeHtml(etf.name)}</span>
@@ -308,7 +314,6 @@ function exportSlackText() {
   let out = `传统金融市场日报 — ${d.date}\n`;
   out += `数据来源：Yahoo Finance / Investing.com / SoSoValue；ETF资金流备用 Farside\n\n`;
 
-  if (d.data_notes && d.data_notes.length) out += d.data_notes.join('\n') + '\n\n';
 
   out += `**全球主要指数与重点美股**\n\n`;
   out += `「指数」\n ${joinItems(STOCK_GROUPS['指数'].tickers)}\n\n`;
@@ -319,8 +324,7 @@ function exportSlackText() {
 
   out += `**BTC / ETH / SOL 现货 ETF**\n\n`;
   for (const etf of d.crypto_etf || []) {
-    const dp = etf.date ? etf.date.split('-') : [];
-    const dateStr = dp.length === 3 ? `${parseInt(dp[1])} 月 ${parseInt(dp[2])} 日` : '';
+    const dateStr = etfDateLabel(etf);
     out += `${etf.name} 净流入：${etf.net_inflow} ｜ 成交额：${etf.volume} ｜ 总资产：${etf.total_assets}（占市值 ${etf.market_cap_pct}）截至 ${dateStr}\n`;
   }
   out += '\n';

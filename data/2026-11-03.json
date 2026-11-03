@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 11:30:00",
+  "updated_at": "2026-11-03 13:55:00",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -28,7 +28,7 @@
       "price": 25164.363,
       "change_pct": -1.07,
       "market_cap": null,
-      "prev_close": 25437.0,
+      "prev_close": 25437,
       "pe_ratio": null,
       "eps": null,
       "change_abs": -272.637,
@@ -86,7 +86,7 @@
       "name": "恒生指数",
       "type": "指数",
       "price": 23392.41,
-      "change_pct": -0.0,
+      "change_pct": 0,
       "market_cap": null,
       "prev_close": 23294.419922,
       "pe_ratio": null,
@@ -146,7 +146,7 @@
       "name": "Tesla",
       "type": "美股",
       "price": 403.82,
-      "change_pct": 1.0,
+      "change_pct": 1,
       "market_cap": null,
       "prev_close": 403.299988,
       "pe_ratio": null,
@@ -217,7 +217,7 @@
       "as_of": "2026-11-02T21:00:02+00:00",
       "market_state": "latest available regular market quote",
       "open": null,
-      "high": 287.0,
+      "high": 287,
       "low": 278.87,
       "volume": 48504345
     },
@@ -318,7 +318,7 @@
       "market_state": "latest available regular market quote",
       "open": null,
       "high": 1179.84,
-      "low": 1161.0,
+      "low": 1161,
       "volume": 687368
     },
     {
@@ -810,7 +810,7 @@
       "ticker": "PL=F",
       "name": "Platinum",
       "type": "大宗商品",
-      "price": 1456.0,
+      "price": 1456,
       "change_pct": 0.11,
       "change_abs": null,
       "prev_close": null,
@@ -845,77 +845,147 @@
     {
       "name": "BTC ETF",
       "type": "us-btc-spot",
-      "net_inflow": "-190.0M",
-      "volume": "1.971B",
-      "total_assets": "124.63B",
-      "market_cap_pct": "1.23%",
+      "net_inflow": "-398.6M",
+      "volume": "1.980B",
+      "total_assets": "98.14B",
+      "market_cap_pct": "6.31%",
       "date": "2026-11-02",
-      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。 | 净流入与总资产按用户提供的SoSoValue页面数字补充（BTC截至11/2，ETH截至10/31）。",
-      "source_url": "https://defillama.com/etfs",
-      "verification_status": "partial",
+      "field_dates": {
+        "net_inflow": "2026-11-02",
+        "volume": "2026-11-02",
+        "total_assets": "2026-10-30",
+        "market_cap_pct": "2026-10-30"
+      },
       "coverage": [
-        "GBTC",
-        "BTC",
         "IBIT",
         "FBTC",
         "ARKB",
-        "BITB",
+        "BTCO",
+        "BTCW",
         "BRRR",
-        "MSBT",
+        "BITB",
         "EZBC",
         "HODL",
-        "BTCW",
-        "BTCO"
+        "GBTC",
+        "BTC",
+        "MSBT"
       ],
-      "flow_source_url": "https://farside.co.uk/btc/",
-      "net_inflow_source_url": "https://www.sosovalue.com"
+      "flow_coverage": [
+        "IBIT",
+        "FBTC",
+        "ARKB",
+        "BTCO",
+        "BTCW",
+        "BRRR",
+        "BITB",
+        "EZBC",
+        "HODL",
+        "GBTC",
+        "BTC",
+        "MSBT"
+      ],
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker",
+      "field_sources": {
+        "net_inflow": "https://farside.co.uk/btc/",
+        "volume": "https://www.tradingdigits.io/crypto-etf-tracker",
+        "total_assets": "https://coinmico.com/etf-flows/bitcoin",
+        "market_cap_pct": "https://coinmico.com/etf-flows/bitcoin"
+      },
+      "volume_usd": 1980124275.57
     },
     {
       "name": "ETH ETF",
       "type": "us-eth-spot",
-      "net_inflow": "+498.0M",
-      "volume": "—",
-      "total_assets": "28.09B",
-      "market_cap_pct": "3.77%",
-      "date": "2026-10-31",
-      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。 | 净流入与总资产按用户提供的SoSoValue页面数字补充（BTC截至11/2，ETH截至10/31）。",
-      "source_url": "https://defillama.com/etfs",
-      "verification_status": "partial",
+      "net_inflow": "-139.7M",
+      "volume": "575.07M",
+      "total_assets": "13.22B",
+      "market_cap_pct": "4.82%",
+      "date": "2026-11-02",
+      "field_dates": {
+        "net_inflow": "2026-11-02",
+        "volume": "2026-11-02",
+        "total_assets": "2026-10-30",
+        "market_cap_pct": "2026-10-30"
+      },
       "coverage": [
         "ETHE",
-        "ETH",
-        "ETHA",
-        "ETHB",
         "ETHW",
-        "TETH",
-        "FETH",
+        "ETHA",
         "ETHV",
+        "TETH",
         "QETH",
-        "EZET"
+        "FETH",
+        "EZET",
+        "ETH",
+        "ETHB",
+        "MSSE"
       ],
-      "flow_source_url": "https://farside.co.uk/eth/",
-      "net_inflow_source_url": "https://www.sosovalue.com"
+      "flow_coverage": [
+        "ETHE",
+        "ETHW",
+        "ETHA",
+        "ETHV",
+        "TETH",
+        "QETH",
+        "FETH",
+        "EZET",
+        "ETH",
+        "ETHB",
+        "MSSE"
+      ],
+      "source_url": "https://www.tradingdigits.io/eth-etf-inflows-tracker",
+      "field_sources": {
+        "net_inflow": "https://farside.co.uk/eth/",
+        "volume": "https://www.tradingdigits.io/eth-etf-inflows-tracker",
+        "total_assets": "https://coinmico.com/etf-flows/ethereum",
+        "market_cap_pct": "https://coinmico.com/etf-flows/ethereum"
+      },
+      "volume_usd": 575074113.12
     },
     {
       "name": "SOL ETF",
       "type": "us-sol-spot",
-      "net_inflow": "—",
-      "volume": "—",
-      "total_assets": "—",
-      "market_cap_pct": "—",
+      "net_inflow": "0.0M",
+      "volume": "52.82M",
+      "total_assets": "1.36B",
+      "market_cap_pct": "2.50%",
       "date": "2026-11-02",
-      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。",
-      "source_url": "https://defillama.com/etfs",
-      "verification_status": "partial",
+      "field_dates": {
+        "net_inflow": "2026-11-02",
+        "volume": "2026-11-02",
+        "total_assets": "2026-11-02",
+        "market_cap_pct": "2026-11-02"
+      },
       "coverage": [
+        "BSOL",
+        "GSOL",
+        "FSOL",
+        "SOLC",
+        "TSOL",
+        "SOEZ",
+        "QSOL",
+        "MSOL",
+        "VSOL"
+      ],
+      "flow_coverage": [
         "BSOL",
         "VSOL",
         "FSOL",
         "TSOL",
         "SOEZ",
-        "GSOL"
+        "MSOL",
+        "GSOL",
+        "QSOL",
+        "SOLC"
       ],
-      "flow_source_url": "https://farside.co.uk/sol/"
+      "source_url": "https://www.tradingdigits.io/sol-etf-inflows-tracker",
+      "field_sources": {
+        "net_inflow": "https://farside.co.uk/sol/",
+        "volume": "https://www.tradingdigits.io/sol-etf-inflows-tracker",
+        "total_assets": "https://coinmico.com/etf-flows/solana",
+        "market_cap_pct": "https://coinmico.com/etf-flows/solana"
+      },
+      "volume_usd": 52823664.72
     }
   ],
   "news": [
@@ -928,38 +998,38 @@
     },
     {
       "category": "美债",
-      "content": "油价大跌推动全球国债收益率回落，美债长端约降4基点，市场等待美国中期选举。",
-      "source": "Reuters",
-      "url": "https://d2233.cms.socastsrm.com/2026/11/02/trading-day-oil-slump-no-cure-for-ai-angst/",
-      "date": "2026-11-02"
+      "content": "油价回落提振美债，10至30年期收益率盘中下行约4基点，触及9月以来低位。",
+      "source": "Bloomberg / LiveMint",
+      "url": "https://www.livemint.com/market/treasury-yields-extend-past-month-s-slide-as-oil-prices-drop-11793656834005.html",
+      "date": "2026-11-03"
     },
     {
       "category": "原油",
-      "content": "美伊谈判预期带动原油约跌8%，Brent录得数月来最大单日跌幅之一。",
-      "source": "Reuters",
-      "url": "https://d2233.cms.socastsrm.com/2026/11/02/trading-day-oil-slump-no-cure-for-ai-angst/",
+      "content": "伊朗与卡塔尔斡旋谈判提振供应恢复预期，Brent跌7.63%，WTI跌7.36%。",
+      "source": "PFL Petroleum",
+      "url": "https://pflpetroleum.com/reports/petroleum-daily-report-11-2-2026/",
       "date": "2026-11-02"
     },
     {
       "category": "黄金白银",
-      "content": "油价回落缓解通胀忧虑，黄金反弹逾2%，白银同步回升；市场仍关注12月加息风险。",
-      "source": "Reuters / MarketScreener",
-      "url": "https://www.marketscreener.com/news/gold-rebounds-from-one-year-low-as-oil-slides-ahead-of-us-midterms-ce785fd8de8fff24",
+      "content": "油价下跌缓解通胀忧虑，现货黄金反弹1.84%、白银涨3.67%，收复部分前日跌幅。",
+      "source": "Kitco",
+      "url": "https://www.kitco.com/news/article/2026-11-02/gold-silver-recover-october-rout-oil-drops-fed-tightening-bets-persist",
       "date": "2026-11-02"
     },
     {
       "category": "加密市场",
-      "content": "比特币和以太坊在交易所安全事件后小幅企稳反弹，美元走弱助风险情绪修复。",
-      "source": "Reuters / Investing.com",
-      "url": "https://au.investing.com/news/economy-news/dollar-pulls-back-ahead-of-us-midterms-bitcoin-stabilises-after-crypto-heist-4733117",
+      "content": "Gate周报：前30大加密资产平均跌0.58%，HYPE受ICE合作消息推动、周涨14.9%。",
+      "source": "Gate Ventures",
+      "url": "https://www.gate.com/blog/gate-ventures-weekly-crypto-recap-november-2-2026",
       "date": "2026-11-02"
     },
     {
       "category": "加密ETF",
-      "content": "11月2日三类现货ETF均仍有基金未报，暂不将部分净流入合计作为全市场数据。",
-      "source": "Farside",
-      "url": "https://farside.co.uk/btc/",
-      "date": "2026-11-03"
+      "content": "21shares最新研究：美国现货比特币ETF第三季吸纳62亿美元，购币量接近同期挖矿产量两倍。",
+      "source": "21shares",
+      "url": "https://www.21shares.com/en-us/insights/bitcoin-etf-inflows-q3-2026",
+      "date": "2026-11-02"
     },
     {
       "category": "加密股票",
@@ -969,510 +1039,262 @@
       "date": "2026-11-02"
     }
   ],
-  "refresh_errors": [],
-  "data_notes": [
-    "美股采用11月2日常规交易时段最近报价；亚洲市场、外汇、商品和美债采用本次最新可得报价，逐项as_of保留时间。",
-    "ETF快照截至11月2日。BTC成交额覆盖12只，ETH和SOL基金覆盖有缺口；AUM估值日期未核实，市值占比不填零。",
-    "Farside11月2日三类ETF仍有基金未报，净流入显示—。新闻为11月2日至3日的报道及核实状态。",
-    "美债变化单位为百分点；期货涨跌使用当前合约报价字段。",
-    "ETF净流入/总资产已用用户提供的SoSoValue页面数字补充：BTC -1.9亿/总资产1246.3亿(截至11/2)，ETH +4.98亿/总资产280.9亿(截至10/31)，SOL无截图数据保持—。"
-  ],
   "etf_fund_snapshot": [
     {
-      "ticker": "GBTC",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Bitcoin Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 1.5,
-      "url": "https://etfs.grayscale.com/gbtc",
-      "flows": 0,
-      "aum": 10610214912,
-      "volume": 81433524.43,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "BTC",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Bitcoin Mini Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.15,
-      "url": "https://etfs.grayscale.com/btc",
-      "flows": 0,
-      "aum": 5271132160,
-      "volume": 53748451.7,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
       "ticker": "IBIT",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Blackrock",
-      "etf_name": "iShares Bitcoin Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.blackrock.com/us/individual/products/333011/ishares-bitcoin-trust",
-      "flows": 0,
-      "aum": 67060465664,
-      "volume": 1521918274.8,
-      "chain": [
-        "Bitcoin"
-      ]
+      "coin": "BTC",
+      "volume_usd": 1528644642.79,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:05.042+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
       "ticker": "FBTC",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Fidelity",
-      "etf_name": "Wise Origin Bitcoin Trust by Fidelity",
-      "custodian": "Self-custody",
-      "pct_fee": 0.25,
-      "url": "https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=FBTC",
-      "flows": 0,
-      "aum": 15454059520,
-      "volume": 210365357.39999998,
-      "chain": [
-        "Bitcoin"
-      ]
+      "coin": "BTC",
+      "volume_usd": 211593012.82,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:05.35+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
       "ticker": "ARKB",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Ark/21 Shares",
-      "etf_name": "Ark/21 Shares Bitcoin Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.21,
-      "url": "https://ark-funds.com/funds/arkb/",
-      "flows": 0,
-      "aum": 2895059968,
-      "volume": 36939194.1,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "BITB",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Bitwise",
-      "etf_name": "Bitwise Bitcoin ETP",
-      "custodian": "Coinbase",
-      "pct_fee": 0.2,
-      "url": "https://bitbetf.com/",
-      "flows": 0,
-      "aum": 3188367616,
-      "volume": 38042847.599999994,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "BRRR",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Valkyrie",
-      "etf_name": "Valkyrie Bitcoin Fund",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://valkyrieinvest.com/brrr/",
-      "flows": 0,
-      "aum": 477585632,
-      "volume": 385267.74,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "MSBT",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Morgan Stanley",
-      "etf_name": "Morgan Stanley Bitcoin Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.14,
-      "url": "https://www.morganstanley.com/im/en-us/financial-advisor/products-and-performance/etfs/msbt.html",
-      "flows": 0,
-      "aum": 873276608,
-      "volume": 10972610.860000001,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "ETHE",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Ethereum Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 2.5,
-      "url": "https://etfs.grayscale.com/ethe",
-      "flows": 0,
-      "aum": 1953242368,
-      "volume": 41940885.18,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "ETH",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Ethereum Mini Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.15,
-      "url": "https://etfs.grayscale.com/eth",
-      "flows": 0,
-      "aum": 2506618624,
-      "volume": 47003426.82,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "ETHA",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Blackrock",
-      "etf_name": "iShares Ethereum Trust ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.ishares.com/us/products/337614/ishares-ethereum-trust-etf",
-      "flows": 0,
-      "aum": 9825040384,
-      "volume": 400536384.52000004,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "ETHB",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Blackrock",
-      "etf_name": "iShares Staked Ethereum Trust ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.blackrock.com/us/individual/products/348532/ishares-staked-ethereum-trust-etf",
-      "flows": 0,
-      "aum": 1179653504,
-      "volume": 19858432.7,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "ETHW",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Bitwise",
-      "etf_name": "Bitwise Ethereum ETP",
-      "custodian": "Coinbase",
-      "pct_fee": 1.5,
-      "url": "https://ethwetf.com/",
-      "flows": 0,
-      "aum": 297422528,
-      "volume": 3562217.25,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "TETH",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "21Shares",
-      "etf_name": "21Shares Ethereum ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.21,
-      "url": "https://www.21shares.com/en-us/products-us/teth",
-      "flows": 0,
-      "aum": null,
-      "volume": 13373955.98,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "FETH",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Fidelity",
-      "etf_name": "Fidelity Ethereum Fund",
-      "custodian": "Self-custody",
-      "pct_fee": 0.25,
-      "url": "https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=FETH",
-      "flows": 0,
-      "aum": 1586143488,
-      "volume": 42227508.900000006,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "ETHV",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "VanEck",
-      "etf_name": "VanEck Ethereum ETF",
-      "custodian": "Gemini",
-      "pct_fee": 0.2,
-      "url": "https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/overview/",
-      "flows": 0,
-      "aum": 131816528,
-      "volume": 654717.9299999999,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "QETH",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Invesco/Galaxy",
-      "etf_name": "Invesco Galaxy Ethereum ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?ticker=BTCO",
-      "flows": 0,
-      "aum": 25348208,
-      "volume": 834834.96,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "EZET",
-      "timestamp": 1793667612,
-      "asset": "ethereum",
-      "issuer": "Franklin Templeton",
-      "etf_name": "Franklin Ethereum ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.19,
-      "url": "https://www.franklintempleton.com/investments/options/exchange-traded-funds/products/40521/SINGLCLASS/franklin-ethereum-etf/EZET",
-      "flows": 0,
-      "aum": 59741632,
-      "volume": 845468.5,
-      "chain": [
-        "Ethereum"
-      ]
-    },
-    {
-      "ticker": "BSOL",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "Bitwise",
-      "etf_name": "Bitwise Solana Staking ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.2,
-      "url": "https://bsoletf.com/",
-      "flows": 0,
-      "aum": 1333437952,
-      "volume": 37246880.400000006,
-      "chain": [
-        "Solana"
-      ]
-    },
-    {
-      "ticker": "VSOL",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "VanEck",
-      "etf_name": "VanEck Solana ETF",
-      "custodian": "Gemini",
-      "pct_fee": 0.3,
-      "url": "https://www.vaneck.com/us/en/investments/solana-etf-vsol/",
-      "flows": 0,
-      "aum": 28547064,
-      "volume": 135233.7992,
-      "chain": [
-        "Solana"
-      ]
-    },
-    {
-      "ticker": "FSOL",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "Fidelity",
-      "etf_name": "Fidelity Solana Fund",
-      "custodian": "Self-custody",
-      "pct_fee": 0.25,
-      "url": "https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=FSOL",
-      "flows": 0,
-      "aum": 239329200,
-      "volume": 2466755.8499999996,
-      "chain": [
-        "Solana"
-      ]
-    },
-    {
-      "ticker": "EZBC",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Franklin Templeton",
-      "etf_name": "Franklin Bitcoin ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.19,
-      "url": "https://www.franklintempleton.com/investments/options/exchange-traded-funds/products/39639/SINGLCLASS/franklin-bitcoin-etf/EZBC",
-      "flows": 0,
-      "aum": 469074880,
-      "volume": 3290756.23,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "HODL",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "VanEck",
-      "etf_name": "VanEck Bitcoin Trust",
-      "custodian": "Gemini",
-      "pct_fee": 0.2,
-      "url": "https://www.vaneck.com/us/en/investments/bitcoin-trust-hodl/overview/",
-      "flows": 0,
-      "aum": 1232712448,
-      "volume": 12605022.120000001,
-      "chain": [
-        "Bitcoin"
-      ]
-    },
-    {
-      "ticker": "BTCW",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "WisdomTree",
-      "etf_name": "WisdomTree Bitcoin Trust",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.wisdomtree.com/investments/etfs/crypto/btcw",
-      "flows": 0,
-      "aum": 171992608,
-      "volume": 211339.44,
-      "chain": [
-        "Bitcoin"
-      ]
+      "coin": "BTC",
+      "volume_usd": 37252632.62,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:05.644+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
       "ticker": "BTCO",
-      "timestamp": 1793667612,
-      "asset": "bitcoin",
-      "issuer": "Invesco/Galaxy",
-      "etf_name": "Invesco Galaxy Bitcoin ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.25,
-      "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?ticker=BTCO",
-      "flows": 0,
-      "aum": 426250112,
-      "volume": 1188777.6500000001,
-      "chain": [
-        "Bitcoin"
-      ]
+      "coin": "BTC",
+      "volume_usd": 1192186,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:06.009+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
-      "ticker": "TSOL",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "21Shares",
-      "etf_name": "21Shares Solana ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.21,
-      "url": "https://www.21shares.com/en-us/products-us/tsol",
-      "flows": 0,
-      "aum": 9842138,
-      "volume": 70212.1,
-      "chain": [
-        "Solana"
-      ]
+      "ticker": "BTCW",
+      "coin": "BTC",
+      "volume_usd": 213484.52,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:06.306+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
-      "ticker": "SOEZ",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "Franklin Templeton",
-      "etf_name": "Franklin Solana ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.19,
-      "url": "https://www.franklintempleton.com/investments/options/exchange-traded-funds/products/47315/SINGLCLASS/franklin-solana-etf/SOEZ",
-      "flows": 0,
-      "aum": 17319432,
-      "volume": 128904.6616,
-      "chain": [
-        "Solana"
-      ]
+      "ticker": "BRRR",
+      "coin": "BTC",
+      "volume_usd": 386541.05,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:06.66+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "BITB",
+      "coin": "BTC",
+      "volume_usd": 38083239.63,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:06.972+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "EZBC",
+      "coin": "BTC",
+      "volume_usd": 3310198.43,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:07.422+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "HODL",
+      "coin": "BTC",
+      "volume_usd": 12665420.81,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:07.745+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "GBTC",
+      "coin": "BTC",
+      "volume_usd": 81706291.97,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:08.088+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "BTC",
+      "coin": "BTC",
+      "volume_usd": 54016200.01,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:08.398+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "MSBT",
+      "coin": "BTC",
+      "volume_usd": 11060424.92,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:08.692+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETHE",
+      "coin": "ETH",
+      "volume_usd": 42463769.91,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:09.227+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETHW",
+      "coin": "ETH",
+      "volume_usd": 3587230.79,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:09.512+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETHA",
+      "coin": "ETH",
+      "volume_usd": 402913924.08,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:09.765+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETHV",
+      "coin": "ETH",
+      "volume_usd": 656766.74,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:10.03+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "TETH",
+      "coin": "ETH",
+      "volume_usd": 13412379.58,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:10.313+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "QETH",
+      "coin": "ETH",
+      "volume_usd": 847678.85,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:10.601+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "FETH",
+      "coin": "ETH",
+      "volume_usd": 42402314.2,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:10.906+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "EZET",
+      "coin": "ETH",
+      "volume_usd": 857210.38,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:11.168+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETH",
+      "coin": "ETH",
+      "volume_usd": 47042266.82,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:11.436+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "ETHB",
+      "coin": "ETH",
+      "volume_usd": 19956429.32,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:11.709+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "MSSE",
+      "coin": "ETH",
+      "volume_usd": 934142.45,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:11.973+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "BSOL",
+      "coin": "SOL",
+      "volume_usd": 37519852.53,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:13.072+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
       "ticker": "GSOL",
-      "timestamp": 1793667612,
-      "asset": "solana",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Solana Staking ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.35,
-      "url": "https://etfs.grayscale.com/gsol",
-      "flows": 0,
-      "aum": 213374656,
-      "volume": 9185874.389999999,
-      "chain": [
-        "Solana"
-      ]
+      "coin": "SOL",
+      "volume_usd": 9238520.05,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:13.383+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
-      "ticker": "HYPG",
-      "timestamp": 1793667612,
-      "asset": "hyperliquid",
-      "issuer": "Grayscale",
-      "etf_name": "Grayscale Hyperliquid Staking ETF",
-      "custodian": "Anchorage Digital",
-      "pct_fee": 0.29,
-      "url": "https://etfs.grayscale.com/hypg",
-      "flows": 0,
-      "aum": 196763232,
-      "volume": 5892103.699999999,
-      "chain": [
-        "Hyperliquid"
-      ]
+      "ticker": "FSOL",
+      "coin": "SOL",
+      "volume_usd": 2504532.31,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:14.226+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
-      "ticker": "BHYP",
-      "timestamp": 1793667612,
-      "asset": "hyperliquid",
-      "issuer": "Bitwise",
-      "etf_name": "Bitwise Hyperliquid ETF",
-      "custodian": "Anchorage Digital",
-      "pct_fee": 0.34,
-      "url": "https://bitwiseinvestments.com/crypto-funds/bhyp",
-      "flows": -1400000,
-      "aum": 199672352,
-      "volume": 21153511.47,
-      "chain": [
-        "Hyperliquid"
-      ]
+      "ticker": "SOLC",
+      "coin": "SOL",
+      "volume_usd": 7454.37,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:14.528+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     },
     {
-      "ticker": "THYP",
-      "timestamp": 1793667612,
-      "asset": "hyperliquid",
-      "issuer": "21Shares",
-      "etf_name": "21Shares Hyperliquid ETF",
-      "custodian": "Coinbase",
-      "pct_fee": 0.3,
-      "url": "https://www.21shares.com/en-us/products-us/thyp",
-      "flows": -1500000,
-      "aum": 91546904,
-      "volume": 6247043.9799999995,
-      "chain": [
-        "Hyperliquid"
-      ]
+      "ticker": "TSOL",
+      "coin": "SOL",
+      "volume_usd": 71445.78,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:14.832+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "SOEZ",
+      "coin": "SOL",
+      "volume_usd": 131608.56,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:15.122+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "QSOL",
+      "coin": "SOL",
+      "volume_usd": 284993.87,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:15.44+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "MSOL",
+      "coin": "SOL",
+      "volume_usd": 2928196.86,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:15.835+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
+    },
+    {
+      "ticker": "VSOL",
+      "coin": "SOL",
+      "volume_usd": 137060.39,
+      "volume_date": "2026-11-02",
+      "source_updated_at": "2026-11-02T23:00:13.84+00:00",
+      "source_url": "https://www.tradingdigits.io/crypto-etf-tracker"
     }
   ]
 }
