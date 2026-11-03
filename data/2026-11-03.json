@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 10:05:22",
+  "updated_at": "2026-11-03 11:30:00",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -845,12 +845,12 @@
     {
       "name": "BTC ETF",
       "type": "us-btc-spot",
-      "net_inflow": "—",
+      "net_inflow": "-190.0M",
       "volume": "1.971B",
-      "total_assets": "—",
-      "market_cap_pct": "—",
+      "total_assets": "124.63B",
+      "market_cap_pct": "1.23%",
       "date": "2026-11-02",
-      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。",
+      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。 | 净流入与总资产按用户提供的SoSoValue页面数字补充（BTC截至11/2，ETH截至10/31）。",
       "source_url": "https://defillama.com/etfs",
       "verification_status": "partial",
       "coverage": [
@@ -867,17 +867,18 @@
         "BTCW",
         "BTCO"
       ],
-      "flow_source_url": "https://farside.co.uk/btc/"
+      "flow_source_url": "https://farside.co.uk/btc/",
+      "net_inflow_source_url": "https://www.sosovalue.com"
     },
     {
       "name": "ETH ETF",
       "type": "us-eth-spot",
-      "net_inflow": "—",
+      "net_inflow": "+498.0M",
       "volume": "—",
-      "total_assets": "—",
-      "market_cap_pct": "—",
-      "date": "2026-11-02",
-      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。",
+      "total_assets": "28.09B",
+      "market_cap_pct": "3.77%",
+      "date": "2026-10-31",
+      "note": "11月2日Farside仍有基金未报，不发布部分流量合计。DefiLlama最新快照BTC成交额覆盖12只；ETH缺MSSE、SOL缺MSOL；AUM估值日期未核实，缺项不填零。 | 净流入与总资产按用户提供的SoSoValue页面数字补充（BTC截至11/2，ETH截至10/31）。",
       "source_url": "https://defillama.com/etfs",
       "verification_status": "partial",
       "coverage": [
@@ -892,7 +893,8 @@
         "QETH",
         "EZET"
       ],
-      "flow_source_url": "https://farside.co.uk/eth/"
+      "flow_source_url": "https://farside.co.uk/eth/",
+      "net_inflow_source_url": "https://www.sosovalue.com"
     },
     {
       "name": "SOL ETF",
@@ -972,7 +974,8 @@
     "美股采用11月2日常规交易时段最近报价；亚洲市场、外汇、商品和美债采用本次最新可得报价，逐项as_of保留时间。",
     "ETF快照截至11月2日。BTC成交额覆盖12只，ETH和SOL基金覆盖有缺口；AUM估值日期未核实，市值占比不填零。",
     "Farside11月2日三类ETF仍有基金未报，净流入显示—。新闻为11月2日至3日的报道及核实状态。",
-    "美债变化单位为百分点；期货涨跌使用当前合约报价字段。"
+    "美债变化单位为百分点；期货涨跌使用当前合约报价字段。",
+    "ETF净流入/总资产已用用户提供的SoSoValue页面数字补充：BTC -1.9亿/总资产1246.3亿(截至11/2)，ETH +4.98亿/总资产280.9亿(截至10/31)，SOL无截图数据保持—。"
   ],
   "etf_fund_snapshot": [
     {
