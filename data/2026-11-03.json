@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 14:36:18",
+  "updated_at": "2026-11-03 16:33:39",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -621,43 +621,43 @@
   "news": [
     {
       "category": "美股",
-      "content": "纳指跌1.07%收25164，标普跌0.51%；道指涨0.41%至51984",
+      "content": "科技股承压拖累纳指跌1.07%收25164、标普跌0.51%；道指涨0.41%至51984，市场表现分化。",
       "source": "美联社",
       "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-475bb37b4d95dd99e26c94e708c99f8f"
     },
     {
       "category": "美债",
-      "content": "美10年期国债收益率收4.91%（-3bp），油价重挫提振债市",
+      "content": "原油大幅回落提振债市，美10年期国债收益率收4.91%（下行3个基点）。",
       "source": "finanzen.ch",
       "url": "https://www.finanzen.ch/nachrichten/aktien/treasuries-see-further-upside-amid-nosedive-by-crude-oil-prices-1036702578"
     },
     {
       "category": "原油",
-      "content": "布伦特结算跌7.63%至104.77美元，WTI跌7.36%至96.46",
+      "content": "供应与需求预期变化令油价重挫；布伦特结算跌7.63%至104.77美元，WTI跌7.36%至96.46。",
       "source": "新华社",
       "url": "https://english.news.cn/20261103/2976a05ed1b04ff7a948e30e83202611/c.html"
     },
     {
       "category": "黄金白银",
-      "content": "现货金涨1.74%至3942.57美元，白银涨3.4%至50.77",
+      "content": "油价回落支撑贵金属买盘，现货金涨1.74%至3942.57美元，白银涨3.4%至50.77。",
       "source": "Kitco",
       "url": "https://www.kitco.com/news/off-the-wire/2026-11-02/gold-rises-over-1-one-year-low-softer-oil-prices-us-midterms-focus"
     },
     {
       "category": "加密",
-      "content": "比特币跌破77000美元，日跌约1.7%；油价跌7%未带动反弹",
+      "content": "风险偏好回落拖累比特币跌破77000美元、日跌约1.7%；油价跌约7%仍未能带动反弹。",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally"
     },
     {
       "category": "加密ETF",
-      "content": "美比特币现货ETF净流出3.9862亿美元，IBIT流出4.053亿",
+      "content": "11月2日美比特币现货ETF净流出3.9862亿美元，其中IBIT流出4.053亿，资金继续撤离。",
       "source": "TokenPost",
       "url": "https://www.tokenpost.com/news/investing/47349"
     },
     {
       "category": "加密股票",
-      "content": "摩根士丹利将Coinbase降至低配，目标价砍至120美元",
+      "content": "摩根士丹利将Coinbase降至低配、目标价砍至120美元，加密概念股承压。",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-bearish-on-coinbase-slashes-target-on-weaker-recovery-4991797"
     }
