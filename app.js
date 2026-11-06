@@ -148,7 +148,7 @@ function etfDateLabel(etf) {
   const mainDate = shortDate(etf.date);
   const assetDate = etf.field_dates && etf.field_dates.total_assets;
   return assetDate && assetDate !== etf.date
-    ? `${mainDate}；资产及占比 ${shortDate(assetDate)}`
+    ? `${mainDate}；总资产截至 ${shortDate(assetDate)}`
     : mainDate;
 }
 
@@ -163,7 +163,7 @@ function renderETF(container, etfData) {
       <span class="label">${escapeHtml(etf.name)}</span>
       净流入：<span class="mono">${escapeHtml(etf.net_inflow)}</span>
       ｜成交额：<span class="mono">${escapeHtml(etf.volume)}</span>
-      ｜总资产：<span class="mono">${escapeHtml(etf.total_assets)}</span>（占市值 <span class="mono">${escapeHtml(etf.market_cap_pct)}</span>）
+      ｜总资产：<span class="mono">${escapeHtml(etf.total_assets)}</span>
       <span class="etf-date">截至 ${dateStr}</span>
     </div>`;
   }
@@ -325,7 +325,7 @@ function exportSlackText() {
   out += `**BTC / ETH / SOL 现货 ETF**\n\n`;
   for (const etf of d.crypto_etf || []) {
     const dateStr = etfDateLabel(etf);
-    out += `${etf.name} 净流入：${etf.net_inflow} ｜ 成交额：${etf.volume} ｜ 总资产：${etf.total_assets}（占市值 ${etf.market_cap_pct}）截至 ${dateStr}\n`;
+    out += `${etf.name} 净流入：${etf.net_inflow} ｜ 成交额：${etf.volume} ｜ 总资产：${etf.total_assets} 截至 ${dateStr}\n`;
   }
   out += '\n';
 
