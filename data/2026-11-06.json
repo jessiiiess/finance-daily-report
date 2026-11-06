@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06 10:10:09",
+  "updated_at": "2026-11-06 10:11:01",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -644,22 +644,22 @@
     {
       "name": "BTC ETF",
       "type": "us-btc-spot",
-      "net_inflow_raw": -292300000,
-      "net_inflow": "-2.92亿",
-      "volume_raw": 3819270000,
+      "net_inflow_raw": -68800000,
+      "net_inflow": "-0.69亿",
+      "volume_raw": 3819226397,
       "volume": "38.19亿",
-      "total_assets_raw": 98807000000,
+      "total_assets_raw": 98807201232,
       "total_assets": "988.07亿",
       "date": "2026-11-05"
     },
     {
       "name": "ETH ETF",
       "type": "us-eth-spot",
-      "net_inflow_raw": -2700000,
-      "net_inflow": "-0.03亿",
-      "volume_raw": 1086950000,
-      "volume": "10.87亿",
-      "total_assets_raw": 13355000000,
+      "net_inflow_raw": -500000,
+      "net_inflow": "-0.01亿",
+      "volume_raw": 1099293113,
+      "volume": "10.99亿",
+      "total_assets_raw": 13354653712,
       "total_assets": "133.55亿",
       "date": "2026-11-05"
     },
@@ -668,9 +668,9 @@
       "type": "us-sol-spot",
       "net_inflow_raw": -800000,
       "net_inflow": "-0.01亿",
-      "volume_raw": 53900000,
-      "volume": "0.54亿",
-      "total_assets_raw": 1401000000,
+      "volume_raw": 54945100,
+      "volume": "0.55亿",
+      "total_assets_raw": 1400688879,
       "total_assets": "14.01亿",
       "date": "2026-11-05"
     }
@@ -708,7 +708,7 @@
     },
     {
       "category": "加密ETF",
-      "content": "11月5日美股风险偏好骤降，比特币现货ETF净流出2.923亿美元，以太坊现货ETF净流出270万美元。",
+      "content": "11月5日美股风险偏好骤降，比特币现货ETF净流出6880万美元，以太坊现货ETF净流出50万美元。",
       "source": "DefiLlama",
       "url": "https://defillama.com/etfs"
     },
