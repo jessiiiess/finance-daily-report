@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10 10:18:32",
+  "updated_at": "2026-11-10 10:24:14",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -644,35 +644,35 @@
     {
       "name": "BTC ETF",
       "type": "us-btc-spot",
-      "net_inflow_raw": -411920000,
-      "net_inflow": "-4.12亿",
-      "volume_raw": 2330000000,
-      "volume": "23.30亿",
-      "total_assets_raw": 95897000000,
-      "total_assets": "958.97亿",
-      "date": "2026-11-06"
+      "net_inflow_raw": 12150000,
+      "net_inflow": "+0.12亿",
+      "volume_raw": 1730000000,
+      "volume": "17.30亿",
+      "total_assets_raw": 95440000000,
+      "total_assets": "954.40亿",
+      "date": "2026-11-09"
     },
     {
       "name": "ETH ETF",
       "type": "us-eth-spot",
-      "net_inflow_raw": -93190000,
-      "net_inflow": "-0.93亿",
-      "volume_raw": 728850000,
-      "volume": "7.29亿",
-      "total_assets_raw": 12841000000,
-      "total_assets": "128.41亿",
-      "date": "2026-11-06"
+      "net_inflow_raw": -44440000,
+      "net_inflow": "-0.44亿",
+      "volume_raw": 651110000,
+      "volume": "6.51亿",
+      "total_assets_raw": 12550000000,
+      "total_assets": "125.50亿",
+      "date": "2026-11-09"
     },
     {
       "name": "SOL ETF",
       "type": "us-sol-spot",
-      "net_inflow_raw": -25080000,
-      "net_inflow": "-0.25亿",
-      "volume_raw": 28050000,
-      "volume": "0.28亿",
-      "total_assets_raw": 1308000000,
-      "total_assets": "13.08亿",
-      "date": "2026-11-06"
+      "net_inflow_raw": -7680000,
+      "net_inflow": "-0.08亿",
+      "volume_raw": 54300000,
+      "volume": "0.54亿",
+      "total_assets_raw": 1250000000,
+      "total_assets": "12.50亿",
+      "date": "2026-11-09"
     }
   ],
   "news": [
