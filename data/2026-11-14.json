@@ -1,0 +1,69 @@
+{
+  "updated_at": "2026-11-14 10:27:17",
+  "stocks": [
+    {"ticker": "^GSPC", "name": "标普 500", "type": "指数", "price": 7561.67, "change_pct": -0.4, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "^IXIC", "name": "纳斯达克", "type": "指数", "price": 25136.27, "change_pct": -0.91, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "^DJI", "name": "道琼斯", "type": "指数", "price": 52347.55, "change_pct": 0.1, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "^N225", "name": "日经 225", "type": "指数", "price": 61142.35, "change_pct": 0.53, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "^HSI", "name": "恒生指数", "type": "指数", "price": 23637.6, "change_pct": -1.55, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "SCHD", "name": "Schwab 美国高股息ETF", "type": "ETF", "price": 36.12, "change_pct": 0.53, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "AAPL", "name": "Apple", "type": "美股", "price": 356.27, "change_pct": 0.39, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "TSLA", "name": "Tesla", "type": "美股", "price": 390.22, "change_pct": -1.82, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "NVDA", "name": "NVIDIA", "type": "美股", "price": 162.85, "change_pct": -2.01, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "MSFT", "name": "Microsoft", "type": "美股", "price": 523.88, "change_pct": 0.17, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "GOOGL", "name": "Alphabet", "type": "美股", "price": 295.77, "change_pct": -0.98, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "AMZN", "name": "Amazon", "type": "美股", "price": 266.66, "change_pct": -0.29, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "JPM", "name": "JPMorgan Chase", "type": "美股", "price": 346.19, "change_pct": 0.98, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "V", "name": "Visa", "type": "美股", "price": 425.76, "change_pct": 1.3, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "GS", "name": "Goldman Sachs", "type": "美股", "price": 916.56, "change_pct": 0.32, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "BLK", "name": "BlackRock", "type": "美股", "price": 1222.91, "change_pct": 0.52, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "PYPL", "name": "PayPal", "type": "美股", "price": 59.28, "change_pct": 1.68, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "XYZ", "name": "Block", "type": "美股", "price": 84.58, "change_pct": 2.82, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "COIN", "name": "Coinbase", "type": "美股", "price": 127.65, "change_pct": -2.31, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "HOOD", "name": "Robinhood", "type": "美股", "price": 77.86, "change_pct": -4.29, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "MSTR", "name": "MicroStrategy", "type": "美股", "price": 111.62, "change_pct": -2.44, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "CRCL", "name": "Circle", "type": "美股", "price": 62.2, "change_pct": -2.54, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "BMNR", "name": "Bitmine", "type": "美股", "price": 17.58, "change_pct": -4.72, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "TRON", "name": "TRON", "type": "美股", "price": 1.41, "change_pct": -2.08, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "WDC", "name": "Western Digital", "type": "美股", "price": 295.65, "change_pct": -5.0, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "STX", "name": "Seagate", "type": "美股", "price": 528.29, "change_pct": -3.09, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "NTAP", "name": "NetApp", "type": "美股", "price": 181.37, "change_pct": -2.53, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null},
+    {"ticker": "MU", "name": "Micron", "type": "美股", "price": 778.31, "change_pct": -2.52, "volume": null, "market_cap": null, "prev_close": null, "open": null, "high": null, "low": null, "pe_ratio": null, "eps": null}
+  ],
+  "forex": [
+    {"ticker": "USDCNY=X", "name": "USD/CNY", "type": "外汇", "price": 6.6704, "change_pct": 0.0, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "EURCNY=X", "name": "EUR/CNY", "type": "外汇", "price": 7.3708, "change_pct": -0.4, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "JPYCNY=X", "name": "JPY/CNY", "type": "外汇", "price": 0.0417, "change_pct": -0.09, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "GBPCNY=X", "name": "GBP/CNY", "type": "外汇", "price": 8.8257, "change_pct": -0.35, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "SGDCNY=X", "name": "SGD/CNY", "type": "外汇", "price": 5.183, "change_pct": -0.2, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null}
+  ],
+  "bonds": [
+    {"ticker": "US30Y", "name": "U.S. 30Y", "type": "美债", "price": 5.47, "change_abs": 0.04, "note": "U.S. Treasury par yield curve, 2026-11-13; change vs 2026-11-12", "change_pct": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "US10Y", "name": "U.S. 10Y", "type": "美债", "price": 5.15, "change_abs": 0.05, "note": "U.S. Treasury par yield curve, 2026-11-13; change vs 2026-11-12", "change_pct": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "US5Y", "name": "U.S. 5Y", "type": "美债", "price": 4.98, "change_abs": 0.03, "note": "U.S. Treasury par yield curve, 2026-11-13; change vs 2026-11-12", "change_pct": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "US2Y", "name": "U.S. 2Y", "type": "美债", "price": 4.88, "change_abs": 0.02, "note": "U.S. Treasury par yield curve, 2026-11-13; change vs 2026-11-12", "change_pct": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null}
+  ],
+  "commodities": [
+    {"ticker": "BZ=F", "name": "Brent Oil", "type": "大宗商品", "price": 95.84, "change_pct": 0.02, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "CL=F", "name": "WTI Crude Oil", "type": "大宗商品", "price": 88.56, "change_pct": -0.2, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "NG=F", "name": "Natural Gas", "type": "大宗商品", "price": 3.23, "change_pct": -3.29, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "GC=F", "name": "Gold", "type": "大宗商品", "price": 3886.3, "change_pct": 0.03, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "SI=F", "name": "Silver", "type": "大宗商品", "price": 49.121, "change_pct": -1.89, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "PL=F", "name": "Platinum", "type": "大宗商品", "price": 1489.7, "change_pct": -2.02, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null},
+    {"ticker": "HG=F", "name": "Copper", "type": "大宗商品", "price": 6.0905, "change_pct": -1.7, "change_abs": null, "volume": null, "prev_close": null, "open": null, "high": null, "low": null}
+  ],
+  "crypto_etf": [
+    {"name": "BTC ETF", "type": "us-btc-spot", "net_inflow_raw": -283997508, "net_inflow": "-2.84亿", "volume_raw": 2885345830, "volume": "28.85亿", "total_assets_raw": 89556010554, "total_assets": "895.56亿", "date": "2026-11-12"},
+    {"name": "ETH ETF", "type": "us-eth-spot", "net_inflow_raw": -70573489.2, "net_inflow": "-0.71亿", "volume_raw": 551646960, "volume": "5.52亿", "total_assets_raw": 11226380297, "total_assets": "112.26亿", "date": "2026-11-12"},
+    {"name": "SOL ETF", "type": "us-sol-spot", "net_inflow_raw": -1923809.48, "net_inflow": "-0.02亿", "volume_raw": 48898583, "volume": "0.49亿", "total_assets_raw": 1157073886, "total_assets": "11.57亿", "date": "2026-11-12"}
+  ],
+  "news": [
+    {"category": "美股", "content": "英伟达首席执行官黄仁勋周四辞职并拖累芯片板块，美股周五多数收低；标普500跌0.40%至7561.67点，纳斯达克综合指数跌0.91%至25136.27点。", "source": "Reuters / Euronext", "url": "https://live.euronext.com/en/financial-news/stocks-mostly-ease-tech-nvidia-concerns-airline-shares-fall-late-session"},
+    {"category": "美债", "content": "美国10月PPI同比升至6.5%、为2022年11月以来最高，市场加码美联储12月加息预期，美债收益率周五继续走高；财政部平价收益率显示10年期升5个基点至5.15%，2年期升2个基点至4.88%。", "source": "美国财政部 / CNBC", "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html"},
+    {"category": "原油", "content": "国际油价周五结算涨跌互现；纽约轻质原油下跌18美分或0.2%结算于88.56美元，伦敦布伦特上涨2美分或0.02%结算于95.84美元。", "source": "新华社", "url": "https://english.news.cn/20261114/754f202267ed4bb493f98681c351e83a/c.html"},
+    {"category": "黄金白银", "content": "在加息预期仍存的背景下，贵金属周五官方结算走势分化；COMEX黄金微涨0.03%结算于3886.30美元，白银下跌1.89%结算于49.121美元。", "source": "The Edge", "url": "https://edgeconsultancykw.com/commodities-wrap-13-november-2026/"},
+    {"category": "加密", "content": "美国10月PPI同比虽略低于预期但仍高达6.5%、未能提振风险资产，比特币周五失守7万美元；盘中最低约67500美元，当日下跌约4%，此后徘徊在68700美元附近。", "source": "Cointelegraph", "url": "https://cointelegraph.com/markets/bitcoin-below-70k-stocks-slip-cooler-us-ppi-print"},
+    {"category": "加密ETF", "content": "机构资金继续撤离现货加密ETF，美国比特币现货ETF在11月12日净流出2.84亿美元，连续第六个交易日净流出；同日以太坊现货ETF净流出7057万美元。", "source": "CoinLab / SoSoValue", "url": "https://coinlab.info/en/news/spot-btc-etfs-outflow-284m-nov-12-2026/"},
+    {"category": "加密股票", "content": "主要加密概念股周五普遍收跌；Strategy（MSTR）下跌2.44%至111.62美元，Robinhood（HOOD）下跌4.29%至77.86美元。", "source": "GTA Wire", "url": "https://globaltradersacademy.com/articles/strategy-mstr-vs-coinbase-coin-vs-robinhood-hood-institutional-flow-and-2"}
+  ]
+}
