@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 10:50:00",
+  "updated_at": "2026-11-24 10:49:02",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -655,21 +655,21 @@
     {
       "name": "ETH ETF",
       "type": "us-eth-spot",
-      "net_inflow_raw": null,
-      "net_inflow": "暂无",
-      "volume_raw": null,
-      "volume": "暂无",
-      "total_assets_raw": null,
-      "total_assets": "暂无",
+      "net_inflow_raw": 5600000,
+      "net_inflow": "已公布合计+0.06亿",
+      "volume_raw": 460484451,
+      "volume": "4.60亿",
+      "total_assets_raw": 7947591106,
+      "total_assets": "已公布合计79.48亿",
       "date": "2026-11-23"
     },
     {
       "name": "SOL ETF",
       "type": "us-sol-spot",
-      "net_inflow_raw": null,
-      "net_inflow": "暂无",
-      "volume_raw": null,
-      "volume": "暂无",
+      "net_inflow_raw": -3828000,
+      "net_inflow": "已公布合计-0.04亿",
+      "volume_raw": 63379218,
+      "volume": "0.63亿",
       "total_assets_raw": null,
       "total_assets": "暂无",
       "date": "2026-11-23"
