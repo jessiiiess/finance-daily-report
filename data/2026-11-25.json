@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 10:27:31",
+  "updated_at": "2026-11-25 10:31:04",
   "stocks": [
     {
       "ticker": "^GSPC",
@@ -648,8 +648,8 @@
       "net_inflow": "已公布合计-0.56亿",
       "volume_raw": 2498347690,
       "volume": "24.98亿",
-      "total_assets_raw": 98807000000,
-      "total_assets": "988.07亿",
+      "total_assets_raw": 73777940000,
+      "total_assets": "已公布合计737.78亿",
       "date": "2026-11-24"
     },
     {
@@ -659,8 +659,8 @@
       "net_inflow": "已公布合计-50万美元",
       "volume_raw": 420637364,
       "volume": "4.21亿",
-      "total_assets_raw": 13355000000,
-      "total_assets": "133.55亿",
+      "total_assets_raw": 9126570000,
+      "total_assets": "已公布合计91.27亿",
       "date": "2026-11-24"
     },
     {
@@ -670,8 +670,8 @@
       "net_inflow": "已公布合计+70万美元",
       "volume_raw": 36441370,
       "volume": "0.36亿",
-      "total_assets_raw": 1401000000,
-      "total_assets": "14.01亿",
+      "total_assets_raw": 1029070000,
+      "total_assets": "已公布合计10.29亿",
       "date": "2026-11-24"
     }
   ],
